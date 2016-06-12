@@ -1,19 +1,18 @@
-var express = require ('express');
-const PORT = 3000;
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
+const express = require('express');
+const consign = require('consign');
 const app = express();
 
 app.set('json spaces', 4);
 
-app.get('/', (req, res) => res.json({status: 'Node Project API'}));
+consign({ verbose: false })
+    .include('libs/config.js')
+    .then('db.js')
+    .then('auth.js')
+    .then('libs/middlewares.js')
+    .then('routes')
+    .then('libs/boot.js')
+    .into(app);
 
-app.get('/tasks', (req, res) => {
-    res.json({
-        tasks: [
-            {title: 'Fazer compras'},
-            {title: 'Consertar o pc'}
-        ]
-    })
-})
-
-app.listen(PORT, () => console.log(`Node Project API - porta ${PORT}`));
+module.exports = app;
