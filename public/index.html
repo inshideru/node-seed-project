@@ -27,8 +27,8 @@
     <link rel="canonical" href="http://www.example.com/">
     -->
     <title>Node Seed Project</title>
+    <link rel="stylesheet" href="vendor/dialog-polyfill/dialog-polyfill.css">
     <link rel="stylesheet" href="vendor/material-design-lite/material.min.css">
-    <script src="vendor/material-design-lite/material.min.js"></script>
     <link rel="stylesheet" href=css/styles.css ">
     <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en ">-->
     <!--<link rel="stylesheet " href="https://fonts.googleapis.com/icon?family=Material+Icons ">-->
@@ -36,11 +36,11 @@
 
 <body>
 
-    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+    <div class="custom-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
 
-        <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+        <header class="custom-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
             <div class="mdl-layout__header-row">
-            <span class="mdl-layout-title">Home</span>
+            <span class="mdl-layout-title">Seed Project</span>
             <div class="mdl-layout-spacer"></div>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
                 <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
@@ -61,10 +61,10 @@
             </ul>
             </div>
         </header>
-        <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
-            <header class="demo-drawer-header">
-                <img src="images/user.jpg" alt="" class="demo-avatar">
-                <div class="demo-avatar-dropdown">
+        <div class="custom-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+            <header class="custom-drawer-header">
+                <img src="images/user.jpg" alt="" class="custom-avatar">
+                <div class="custom-avatar-dropdown">
                     <span>hello@example.com</span>
                     <div class="mdl-layout-spacer"></div>
                     <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
@@ -78,7 +78,7 @@
                     </ul>
                 </div>
             </header>
-            <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+            <nav class="custom-navigation mdl-navigation mdl-color--blue-grey-800">
                 <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
                 <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>Inbox</a>
                 <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">delete</i>Trash</a>
@@ -87,12 +87,15 @@
                 <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">local_offer</i>Promos</a>
                 <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Social</a>
                 <div class="mdl-layout-spacer"></div>
-                <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
+                <a class="mdl-navigation__link" href="">
+                    <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i>
+                    <span class="visuallyhidden">Help</span>
+                </a>
             </nav>
         </div>
 
         <main class="mdl-layout__content mdl-color--grey-100">
-            <div class="mdl-grid demo-content">
+            <div class="mdl-grid custom-content">
                 <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
                     <div class="mdl-card__title">
                         <h4 class="mdl-card__title-text">Get going on Android</h4>
@@ -101,6 +104,7 @@
                         <span class="mdl-typography--font-light mdl-typography--subhead">Hail a taxi, find a recipe, run through a temple – Google Play has all the apps and games that let you make your Android device uniquely yours.</span>
                     </div>
                 </div>
+
                 <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-grid">
                     <div class="mdl-card__title">
                         <h4 class="mdl-card__title-text">Get going on Android</h4>
@@ -108,16 +112,11 @@
                     <div class="mdl-card__supporting-text">
                         <span class="mdl-typography--font-light mdl-typography--subhead">Hail a taxi, find a recipe, run through a temple – Google Play has all the apps and games that let you make your Android device uniquely yours.</span>
                     </div>
-                    <div class="mdl-card__actions">
-                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                            Make the switch
-                            <i class="material-icons">chevron_right</i>
-                        </a>
-                    </div>
                 </div>
-                <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+                
+                <div class="custom-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
 
-                    <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cel--4-col-tablet mdl-cell--12-col-desktop">
+                    <div class="custom-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cel--4-col-tablet mdl-cell--12-col-desktop">
                         
                         <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
                             <div class="mdl-card__title-text">Coisas</div>
@@ -130,14 +129,18 @@
                         </div>
 
                     </div>
-                    <div class="demo-separator mdl-cell--1-col"></div>
+                    <div class="custom-separator mdl-cell--1-col"></div>
 
                 </div>
             </div>
-            <div class="demo-separator mdl-cell--1-col"></div>
+            <div class="custom-separator mdl-cell--1-col"></div>
 
+            <script src="js/head.load.min.js"></script>
+            <script src="js/boot.js"></script>
         </main>
     </div>
+
+
 </body>
 
 </html>
