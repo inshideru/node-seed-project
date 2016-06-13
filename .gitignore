@@ -41,3 +41,4 @@ jspm_packages
 
 arquivo.json
 public/apidoc
+public/vendor

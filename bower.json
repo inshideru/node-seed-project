@@ -1,0 +1,24 @@
+{
+  "name": "node-seed-project-frontend",
+  "description": "node starter project",
+  "main": "index.js",
+  "authors": [
+    "Paulo Sorrentino"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/inshideru/node-seed-project",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.6",
+    "angular-i18n": "^1.5.6",
+    "material-design-lite": "^1.1.3"
+  }
+}
