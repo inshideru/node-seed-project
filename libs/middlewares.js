@@ -4,6 +4,7 @@ const cors = require('cors');
 const morgan = require('morgan');
 const logger = require('./logger.js');
 const compression = require('compression');
+const helmet = require('helmet');
 
 module.exports = app => {
     app.set('port', process.env.PORT || 3000);
@@ -15,6 +16,7 @@ module.exports = app => {
             }
         }
     }));
+    app.use(helmet());
     app.use(cors({
         origin: ['http://localhost:3001'],
         methods: ['GET', 'POST', 'PUT', 'DELETE'],
