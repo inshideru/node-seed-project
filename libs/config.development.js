@@ -1,3 +1,5 @@
+const logger = require('./logger.js');
+
 module.exports = {
     database: 'node_seed_project',
     username: 'postgres',
@@ -5,6 +7,9 @@ module.exports = {
     params: {
         dialect: 'postgres',
         storage: 'node.seed.project',
+        logging: (sql) => {
+            logger.info(`[${new Date()}] ${sql}`);
+        },
         define: {
             underscored: true
         }

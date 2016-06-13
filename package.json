@@ -4,23 +4,36 @@
   "description": "node starter project",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "npm run apidoc && nodemon index.js",
+    "clusters": "npm run apidoc && node clusters.js",
+    "apidoc": "apidoc -i routes/ -o public/apidoc",
     "test": "SET NODE_ENV=test&&mocha test/**/*.js"
+  },
+  "apidoc": {
+    "name": "Documentação - Node Seed Project",
+    "template": {
+      "forceLanguage": "pt_br"
+    }
   },
   "author": "Paulo Sorrentino",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.3.0",
     "body-parser": "^1.15.1",
+    "compression": "^1.6.2",
     "consign": "^0.1.2",
+    "cors": "^2.7.1",
     "express": "^4.13.4",
     "jwt-simple": "^0.5.0",
+    "morgan": "^1.7.0",
     "passport": "^0.3.2",
     "passport-jwt": "^2.0.0",
     "pg": "^5.0.0",
-    "sequelize": "^3.23.3"
+    "sequelize": "^3.23.3",
+    "winston": "^2.2.0"
   },
   "devDependencies": {
+    "apidoc": "^0.16.1",
     "chai": "^3.5.0",
     "mocha": "^2.5.3",
     "supertest": "^1.2.0"
