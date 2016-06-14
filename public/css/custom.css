@@ -1,0 +1,247 @@
+body{
+    padding-top:54px;
+}
+footer .row {
+    padding-bottom: 20px;
+}
+a:hover, a:active, a:focus {
+    outline: none;
+    text-decoration: none;
+}
+a:hover {
+    color: #adadad;
+}
+table a:not(.btn), .table a:not(.btn) {
+    text-decoration: none;
+}
+body > .container {
+    padding: 10px 15px 0;
+}
+.menu {
+    overflow-x: hidden;
+    position: relative;
+    left: 0px;
+}
+.menu-open {
+    left:211px;
+}
+.menu-open .menu-side {
+    left: 0px;
+}
+
+.menu-side,
+.menu {
+    -webkit-transition: left 0.4s ease;
+    -moz-transition: left 0.4s ease;
+    transition: left 0.4s ease;
+}
+.menu-side {
+    background-color: #111;
+    border-right: 1px solid #000;
+    color: #fff;   
+    position: fixed;
+    top: 45px;
+    left: -231px;
+    width: 210px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.slide-bar-toggle {
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 0px;
+    border-radius: 4px;
+    outline-width: 0px;
+}
+.slide-bar-toggle:hover {
+    background-color: #18bc9c;
+}
+.slide-bar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #e7e7e7;
+}
+.slide-bar-toggle .icon-bar + .icon-bar {
+    margin-top: 4px;
+}
+.navbar-toggle {
+    border: 0px;
+    padding: 5px 10px 0px 10px;
+    color: #ffffff;
+}
+@media screen {
+    .navbar-toggle {
+        border: 0px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .slide-bar-toggle {
+        margin-left: 5px;
+    }
+    .badge {
+        background-color: #2196F3;
+    }
+}
+.navbar-toggle .fa {
+    font-size: 200%;
+}
+.navbar {
+    min-height: 40px;
+}
+.navbar-nav > li > a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.navbar-brand {
+    float: left;
+    padding: 12px 15px;
+    font-size: 24px;
+    line-height: 23px;
+    height: 40px;
+}
+.menu-side .sidebar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.treeview, .sidebar-menu li {
+    background-color: #222222;
+}
+.menu-side .sidebar-menu .treeview-menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-side > .sidebar-menu > li {
+    border-top: 0px solid #444444;
+    border-bottom: 1px solid #111;
+}
+
+.menu-side .sidebar-menu > li > a {
+    padding: 12px 5px 12px 12px;
+    display: block;
+}
+.treeview-menu > li > a {
+    padding: 12px 5px 12px 0px;
+    display: block;
+}
+.treeview-menu > li > a:hover {
+    color: #cfcfcf;
+}
+.treeview-menu > li {
+    background-color: #000;
+    border-top: 0px solid #222;
+    border-bottom: 1px solid #111;
+}
+/* Menu lateral abertura vertical*/
+.sidebar-menu > li > a:hover, .sidebar-menu > li.active > a {
+    color: #000000;
+    background: #bbbbbb;
+    border-bottom: #cfcfcf;
+}
+
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+    border: none;
+    z-index: 100;
+    display:none;
+}
+
+.sidebar-menu a {
+    color: #adadad;
+}
+
+td > .img-circle {
+    width: 40px;
+}
+
+.profilefoto {
+    max-width: 250px;
+}
+.navbar-inverse {
+    color: #b2dbfb;
+}
+.navbar-inverse .slide-bar-toggle .icon-bar{
+    background-color: #b2dbfb;
+}
+.navbar-inverse .slide-bar-toggle:hover, .navbar-inverse .navbar-toggle:hover {
+    background-color: #128ff2;
+    color:#ffffff;
+}
+.navbar-form {
+    margin-top: 3px;
+    margin-bottom: 7px;
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+    padding: 10px 18px;
+    border-bottom: 1px solid #dddddd;
+}
+
+table.dataTable tfoot th,
+table.dataTable tfoot td {
+    padding: 10px 18px 6px 18px;
+    border-top: 1px solid #dddddd;
+}
+
+table.dataTable.no-footer {
+    border-bottom: 1px solid #dddddd;
+}
+
+#report_filter .form-control {
+    border: 1px solid #dddddd;
+}
+
+#report_length label, #report_info {
+    width: 300px;
+}
+.bg-gray {
+    background-color: #ecf0f1;
+}
+table.table tbody td {
+    vertical-align: middle;
+
+}
+#painel-welcome {
+    margin-top: 20px;
+    background-image: url('../img/binarybrain.jpg');
+    background-position: center;
+    background-size: 100%;
+/*    -webkit-filter: blur(10px);
+    filter: blur(10px);*/
+}
+
+#painel-welcome p, #painel-welcome h2 {
+    color: #fff;
+    text-shadow: 2px 2px 2px #000000;
+}
+.modal-dialog {
+    z-index: 9999;
+}
+.has-feedback .form-control {
+  padding-right: 15px;
+}
+
+.form-horizontal .has-feedback .form-control-feedback {
+    top: 0;
+    right: 15px;
+}

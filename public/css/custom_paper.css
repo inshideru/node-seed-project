@@ -1,0 +1,619 @@
+body.login {
+    margin-top: 50px;
+}
+
+.page-header {
+    border-bottom: 0px solid #bbbbbb;
+}
+
+.footer {
+    width: 100%;
+    height: 55px;
+    padding: 10px 0;
+    margin: 20px 0 0 0;
+}
+
+.footer .text-muted {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer .text-muted small {
+    font-size: 12px;
+}
+
+.footer .text-muted a {
+    color: #bbbbbb;
+}
+
+.footer .text-muted a:hover {
+    color: #2196f3;
+}
+
+a:hover, a:active, a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #adadad;
+}
+
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+    border: none;
+    z-index: 100;
+    display: none;
+}
+
+td > .img-circle {
+    width: 50px;
+}
+
+.profilefoto, .foto-lg {
+    max-width: 250px;
+}
+
+.foto-md {
+    width: 100px;
+}
+
+.foto-sm {
+    width: 50px;
+}
+
+.profile-card {
+    border: 0px solid #000;
+    line-height: 17px;
+}
+
+.profile-card .profilefoto {
+    border: 0px solid #0075b0;
+}
+
+.profile-card .profile-card-foto-container {
+    float: left;
+    clear: both;
+}
+
+.profile-card .pcard-name {
+    padding: 0px;
+    font-size: 16px;
+    position: relative;
+    left: 10px;
+    top: 5px;
+}
+
+.profile-card .pcard-name .pcard-info {
+    font-size: 14px;
+    position: relative;
+    top: 10px;
+}
+.panel {
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+.profile-card.pcard-md .panel {
+    border: 1px;
+    border-left: 2px solid #0075b0;
+    box-sizing: border-box;
+}
+
+.pcard-sm .profilefoto {
+    width: 50px;
+}
+
+.pcard-md .profilefoto {
+    width: 70px;
+}
+
+.pcard-lg .profilefoto {
+    width: 150px;
+}
+
+.pcard-sm {
+    min-width: 200px;
+}
+
+.pcard-md {
+    min-width: 300px;
+}
+
+.pcard-lg {
+    min-width: 300px;
+}
+
+.pcard-md > .panel-body {
+    padding: 10px;
+}
+
+.pcard-sm .pcard-name {
+    font-size: 12px;
+    position: relative;
+    left: 10px;
+    top: 5px;
+}
+
+.pcard-md .pcard-name {
+    font-size: 14px;
+    position: relative;
+    left: 10px;
+    top: 5px;
+}
+
+.pcard-lg .pcard-name {
+    font-size: 22px;
+    position: relative;
+    left: 10px;
+    top: 20px;
+}
+
+.pcard-sm .pcard-name .pcard-info {
+    font-size: 12px;
+    margin: -10px 5px 0 15px;
+}
+
+.pcard-md .pcard-name .pcard-info {
+    font-size: 13px;
+    position: relative;
+    top: 2px;
+}
+
+.pcard-lg .pcard-name .pcard-info {
+    font-size: 16px;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    line-height: 25px;
+}
+
+.navbar-form {
+    margin-top: 3px;
+    margin-bottom: 7px;
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+    padding: 10px 18px;
+    border-bottom: 1px solid #dddddd;
+}
+
+table.dataTable tfoot th,
+table.dataTable tfoot td {
+    padding: 10px 18px 6px 18px;
+    border-top: 1px solid #dddddd;
+}
+
+table.dataTable.no-footer {
+    border-bottom: 1px solid #dddddd;
+}
+
+#report_filter .form-control {
+    border: 1px solid #dddddd;
+}
+
+#report_length label, #report_info {
+    width: 300px;
+}
+
+.usuario-panel {
+    padding: 10px;
+}
+
+.usuario-panel:after {
+    clear: both;
+}
+
+.usuario-panel > .image > img {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #adadad;
+}
+
+.usuario-panel > .info {
+    padding: 5px 5px 5px 15px;
+    font-size: 14px;
+    line-height: 1;
+}
+
+/*Controle de formulários
+#pessoafisicaform .selectContainer .form-control-feedback,
+#pessoafisicaform .inputGroupContainer .form-control-feedback{
+    top: 0;
+    right: -15px;
+}
+*/
+#setorform .btn-group .form-control-feedback,
+#form_end_morador .btn-group .form-control-feedback,
+#pessoafisicaform .btn-group .form-control-feedback,
+#cadastro_usuario .btn-group .form-control-feedback,
+#form_relacionamentos .btn-group .form-control-feedback,
+#form_pf_relacionamento .btn-group .form-control-feedback {
+    top: 0;
+    right: -30px;
+}
+
+.input-sm {
+    background-color: #f9f9f9;
+}
+select.input-sm {
+    line-height: 15px;
+}
+
+.nav-tabs {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 23px;
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+/*e5e5e5*/
+
+.nav-tabs > li > a {
+    box-shadow: inset 0 0px 0 #dddddd;
+}
+
+.nav-tabs > li > a:hover {
+    box-shadow: inset 0 -2px 0 #2196f3;
+}
+
+.img-thumb-panel {
+    height: 45px;
+    width: 45px;
+    margin: -8px 10px 10px 0px;
+}
+
+.legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 23px;
+    font-size: 19.5px;
+    line-height: inherit;
+    color: #212121;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.dropdown-busca {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 300px;
+    margin-bottom: 0;
+    list-style: none;
+    font-size: 1em;
+    text-align: left;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+}
+
+#busca-informante-resultado {
+    position: relative;
+}
+
+#nav-top-form-busca input {
+    font-size: 13px;
+    background-color: transparent;
+    border: 0;
+    box-shadow: inset 0 -1px 0 #b2dbfb;
+    color: #fff;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+#nav-top-form-busca .form-control::-moz-placeholder {
+    color: #b2dbfb;
+    opacity: 1;
+}
+
+#nav-top-form-busca .form-control:-ms-input-placeholder {
+    color: #b2dbfb;
+}
+
+#nav-top-form-busca .form-control::-webkit-input-placeholder {
+    color: #b2dbfb;
+}
+
+#nav-top-form-busca .list-group-item,
+.dropdown-busca .list-group-item {
+    border: 0;
+    border-top: 1px solid #e2e2e2;
+    line-height: 10px;
+}
+
+#nav-top-form-busca .list-group-item-text {
+    font-size: 12px;
+}
+.btn-default {
+    background-color: #ffffff;
+}
+/** BOTÕES CIRCULARES */
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+
+.btn-circle.btn-md {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 7px;
+    font-size: 18px;
+    line-height: 1.428571429;
+    border-radius: 25px;
+}
+
+.btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    padding: 14px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 25px;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: 35px;
+}
+
+/** FIM BOTÕES CIRCULARES */
+
+.content-header > .btn-panel {
+    float: right;
+    background: transparent;
+    margin-top: 0px;
+    margin-bottom: 0;
+    font-size: 12px;
+    padding: 7px 5px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+.btn-panel {
+    padding:0;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+.btn-panel > li {
+    display: inline-block;
+}
+
+.btn-panel .btn {
+    z-index: 1000;
+}
+
+table.dataTable tbody td, table.table tbody td {
+    vertical-align: middle;
+
+}
+
+/** Collapsible Panel */
+.panel-heading span {
+    margin-top: -20px;
+    font-size: 15px;
+}
+
+.clickable {
+    cursor: pointer;
+    color: #fff;
+}
+
+.panel-default .clickable {
+    cursor: pointer;
+    color: #5a5a5a;
+}
+
+#pessoa_relac button {
+    display: none;
+}
+
+#pessoa_relac p {
+    font-size: 18px;
+    line-height: 50px;
+}
+
+#pessoa_relac img {
+    width: 70px;
+    height: 70px;
+}
+
+#pessoa_relac h4 {
+    font-size: 16px;
+}
+
+.circle-perfil {
+    max-width: 25%;
+    min-width: 25%;
+    text-align: center;
+}
+
+.circle-perfil img {
+    border: 3px solid #ffffff;
+}
+
+.circle-perffil-nome {
+    padding: 10px;
+    line-height: 15px;
+    font-size: 14px;
+}
+
+/* Controle exibição das opções de Estudo do formulário de Pessoa Física*/
+.field_hidden {
+    display: none;
+}
+
+#webcam_live video {
+    position: relative;
+    left: -40px;
+}
+
+#buttom_webcam_preview {
+    position: absolute;
+    left: 210px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+}
+
+.hidden-input {
+    width: 0;
+    visibility: hidden;
+}
+
+.btn-pcard-bottom-right {
+    float: right;
+}
+
+.lead-container .lead {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+label {
+    font-size: 14px;
+}
+
+.loading {
+    display: none;
+}
+
+/* Hack para usar com icon */
+.navbar-brand {
+    float: left;
+    padding: 6px 5px 4px 5px;
+    font-size: 24px;
+    line-height: 23px;
+    height: 35px;
+}
+
+.main-header .logo {
+    display: block;
+    text-align: left;
+}
+
+.logo .icon-brand {
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+/* Hack para usar com icon */
+
+.btn-curso {
+    text-align: left;
+}
+
+.graphic-footer {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.main-header .custom-menu #navbar-search-input {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: transparent;
+}
+input.form-control {
+    border: none;
+    border-bottom: 1px #97a0b3 solid;
+    background: transparent;
+    padding-right: 5px;
+}
+.form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.form-horizontal .has-feedback .form-control-feedback {
+    top: 0;
+    right: 15px;
+}
+.has-feedback .form-control {
+  padding-right: 5px;
+}
+.content, .content-header {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+.fixed .content-wrapper {
+    padding-top: 65px;
+}
+
+@media (max-width: 767px) {
+    .fixed .content-wrapper {
+        padding-top: 105px;
+    }
+    .form-control#pessoa_1 {
+        max-width: 80%;
+        float: right;
+    }
+
+    #nav-top-form-busca {
+        border: none;
+        padding: 0 15px 0 0;
+    }
+
+    #area-do-resultado {
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        left: 20px;
+    }
+
+    .navbar-nav {
+        display: none;
+    }
+
+    .content-header > .btn-panel {
+        position: relative;
+        margin-top: 5px;
+        top: 0;
+        right: 0;
+        float: none;
+        padding-left: 10px;
+    }
+}
+.box .overlay > .fa-3x {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+    color: #000;
+    font-size: 60px;
+}
+
+#moradoresModal .modal-body {
+    max-height: 480px;
+    overflow: auto;
+    background-color: #ecf0f5;
+}
