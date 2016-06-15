@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="page-header">
+        <div class="row">
+            <div class="col-md-12">
+
+                <h3>Login <small>e cadastro!</small></h3>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <form class="form-horizontal" ng-submit="login.autentica()">
+                <fielset>
+                    <legend>Cadastro</legend>
+
+                    <div class="form-group">
+                        <label for="nome" class="col-lg-2 control-label">Nome</label>
+                        <div class="col-lg-10">
+                            <input ng-model="login.nome" type="text" class="form-control" id="nome" placeholder="Nome">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-lg-2 control-label">Email</label>
+                        <div class="col-lg-10">
+                            <input ng-model="login.email" type="text" class="form-control" id="email" placeholder="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="senha" class="col-lg-2 control-label">Senha</label>
+                        <div class="col-lg-10">
+                            <input ng-model="login.senha" type="password" class="form-control" id="senha">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-lg-10 col-lg-offset-2">
+                            <button type="reset" class="btn btn-default">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </fielset>
+            </form>
+        </div>
+        <div class="col-md-6"></div>
+    </div>
+</div>

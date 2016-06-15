@@ -16,24 +16,13 @@
                     templateUrl: "views/main.html",
                     data: { pageTitle: 'Example view' }
                 })
-                .state('index.dois', {
-                    url: "/list",
-                    templateUrl: "partials/state1.list.html",
-                    controller: function ($scope) {
-                        $scope.items = ["A", "List", "Of", "Items"];
-                    }
+                .state('login', {
+                    url: '/login',
+                    templateUrl: '/views/login.html',
+                    controller: 'LoginCtrl',
+                    controllerAs: 'login'
                 })
-                .state('state2', {
-                    url: "/state2",
-                    templateUrl: "partials/state2.html"
-                })
-                .state('state2.list', {
-                    url: "/list",
-                    templateUrl: "partials/state2.list.html",
-                    controller: function ($scope) {
-                        $scope.things = ["A", "Set", "Of", "Things"];
-                    }
-                });
+                ;
 
         }]);
 })();
