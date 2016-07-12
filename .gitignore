@@ -44,3 +44,5 @@ public/apidoc
 public/vendor
 .vscode
 .idea
+libs/dbconfig.js
+libs/dbtestconfig.js

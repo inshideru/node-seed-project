@@ -1,8 +1,11 @@
+const dbconfig = require('./dbtestconfig.js');
+
 module.exports = {
     database: 'node_seed_project_test',
     username: 'postgres',
     password: '123456',
     params: {
+        host: 'localhost',
         dialect: 'postgres',
         storage: 'node.seed.project.test',
         logging: false,
