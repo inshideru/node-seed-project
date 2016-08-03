@@ -1,5 +1,3 @@
-const dbconfig = require('./dbtestconfig.js');
-
 module.exports = {
     database: 'node_seed_project_test',
     username: 'postgres',

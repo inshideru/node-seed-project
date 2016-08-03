@@ -7,7 +7,7 @@ module.exports = app => {
      *      HTTP/1.1 200 OK
      *      {"status": "Node Project API"}
      */
-    app.get('/', (req, res) => {
+    app.get('/status', (req, res) => {
         res.json({ status: 'Node Project API' });
     });
 };
