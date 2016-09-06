@@ -1,0 +1,18 @@
+{
+    "user_id": 1,
+    "data": {
+        "address": {
+            "street": "Rua dos Pracinhas",
+            "number": "19660",
+            "neighbohood": "Vila Marta",
+            "city": "Franca",
+            "state": "São Paulo",
+            "uf": "SP",
+            "cep": "14000000"
+        },
+        "phones": {
+            "residencial": "1637000000",
+            "mobile": "16998987777"
+        }
+    }
+}
