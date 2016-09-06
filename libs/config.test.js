@@ -3,6 +3,7 @@ module.exports = {
     username: 'postgres',
     password: '123456',
     params: {
+        host: 'localhost',
         dialect: 'postgres',
         storage: 'node.seed.project.test',
         logging: false,
